@@ -1,0 +1,37 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  display: block;
+  margin: ($base-size * 3);
+  padding: ($base-size * 0.5) ($base-size);
+  border: none;
+  border-radius: ($radius * 0.7);
+  background-color: $color-primary;
+  color: $color-secondary;
+  transition: $transition ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-secondary;
+    color: $color-primary;
+  }
+}
+
+.pages {
+  margin: ($base-size * 0.25) 0;
+  padding: 0;
+  height: 45px;
+  width: 45px;
+  color: $color-dark;
+  border: none;
+  border-radius: 0;
+  background-color: $color-bg;
+
+  &.active,
+  &:hover {
+    color: inherit;
+    background-image: linear-gradient(217deg, $color-light, $color-bg, $color-bg-light),
+                      linear-gradient(127deg, $color-bg, $color-bg-light, $color-light),
+                      linear-gradient(336deg, $color-light, $color-bg-light, $color-bg);
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../styles/settings.scss';
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: ($base-size * 4) ($base-size * 2) ($base-size) ($base-size * 2);
+  margin: ($base-size * 6) auto ($base-size * 2) auto;
+  height: 200px;
+  min-width: 250px;
+  max-width: 325px;
+  background-color: $color-light;
+  border: 1px solid $color-dark;
+  border-radius: ($radius * 0.5);
+
+  .input {
+    border: 1px solid lighten($color-dark, 70%);
+    padding: ($base-size);
+    width: 200px;
+    border: 1px solid $color-secondary;
+    border-radius: ($radius * 0.5);
+    outline-style: none;
+  }
+
+  .button {
+    margin: ($base-size * 2);
+    padding: ($base-size * 0.5) ($base-size);
+    border: none;
+    border-radius: ($radius * 0.7);
+    background-color: $color-primary;
+    color: $color-secondary;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-primary;
+    }
+  }
+}

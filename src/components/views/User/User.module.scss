@@ -1,0 +1,101 @@
+@import '../../../styles/settings.scss';
+
+.text p {
+  font-size: 1.2rem;
+  margin: ($base-size) auto 0 auto;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: left;
+  list-style: none;
+
+  .listItem {
+    flex: 1;
+    display: flex;
+  }
+
+  .link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 350px;
+    color: $color-dark;
+    font-weight: 600;
+    text-decoration: none;
+
+    /* Hide extra text */
+    .mask {
+      position: relative;
+      padding: 0;
+      height: 18px;
+      overflow: hidden;
+    }
+
+    .linkContainer {
+      transition: $transition ease;
+    }
+
+    .title {
+      display: block;
+      font-size: 1.1rem;
+      line-height: 16px;
+      transition: $transition ease;
+    }
+
+    .linkTitle1 {
+      transform-origin: right center;
+    }
+
+    .linkTitle2 {
+      transform-origin: left center;
+      transform: rotate(20deg);
+    }
+
+    /* Move up two texts (16px = font-size) */
+    &:hover .linkContainer {
+      transform: translateY(-16px);
+    }
+
+    &:hover .linkTitle1 {
+      transform: rotate(20deg);
+    }
+
+    &:hover .linkTitle2 {
+      transform: rotate(0);
+    }
+  }
+}
+
+.pages {
+  margin: ($base-size * 4) 0;
+
+  ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+    padding: ($base-size * 0.5);
+  }
+}
+
+@media (max-width: 756px){
+  .list {
+    flex-direction: column;
+
+    .listItem {
+      flex-direction: column;
+      margin-top: ($base-size * 2);
+    }
+  }
+}
