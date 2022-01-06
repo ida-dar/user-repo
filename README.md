@@ -1,6 +1,8 @@
 # user-repo
 
-It is a simple web app listing any GitHub user public repositories. Repositories are sorted by their number of stars or alphabetically if the star number is equal. By clicking on repo's name you will be redirected to its source code on GitHub.
+It is a simple web app listing any GitHub user public repositories. To search for user's repos enter their GitHub username in a form visible after starting the development mode (<a href='#getting-started'>see instructions below</a>). Repositories are sorted by their number of stars or alphabetically if the star number is equal. By clicking on repo's name you will be redirected to its source code on GitHub.
+<br><br>
+The application works in the current version of Chrome / Firefox.
 
 ## Used technologies
 
