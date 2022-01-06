@@ -54,7 +54,7 @@ class User extends React.Component {
       <div className='row justify-content-around align-content-center'>
         <div className={`col-lg-8 col-md-12 col-sm-12 ${styles.text}`}>
           <p>Welcome to simple app listing any GitHub user public repositories. Please find below a form in which you may enter a GitHub username.</p>
-          <p>Repositories are sorted by repo's star number or alphabetically if the stars number is equal.</p>
+          <p>Repositories are sorted by their number of stars or alphabetically if the star number is equal.</p>
         </div>
         <div className='col-lg-12 col-md-12 col-sm-12'>
           <UserForm />
@@ -67,7 +67,7 @@ class User extends React.Component {
           <>
             <>
               <div className={styles.pages}>
-                <h4>Displaying repositories of GitHub user: <strong>{user[0].owner}</strong></h4>
+                {user.length > 0 ? <h4>Displaying repositories of GitHub user: <strong>{user[0].owner}</strong></h4> : ''}
                 <p>No. of repos: {user.length}</p>
                 <ul>{pageNumbers.length > 1 && renderPageNumbers}</ul>
               </div>
@@ -84,7 +84,7 @@ class User extends React.Component {
                     </span>
                   </a>
                   <span>
-                    No. of stars: {el.stars}
+                    Stars: {el.stars}
                   </span>
                 </li>
               ))}

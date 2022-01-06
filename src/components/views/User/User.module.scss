@@ -15,8 +15,9 @@
   list-style: none;
 
   .listItem {
-    flex: 1;
+    width: 500px;
     display: flex;
+    justify-content: space-between;
   }
 
   .link {
