@@ -1,0 +1,11 @@
+@import '../../../styles/settings.scss';
+
+.error {
+  margin: ($base-size * 5) auto;
+
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $color-error;
+  }
+}

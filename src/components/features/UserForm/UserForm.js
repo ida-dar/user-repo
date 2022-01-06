@@ -3,6 +3,7 @@ import styles from './UserForm.module.scss';
 
 import Button from '../../common/Button/Button';
 import PowerModeInput from 'power-mode-input';
+import Error from '../../features/Error/Error';
 
 class UserForm extends React.Component {
 
@@ -50,7 +51,7 @@ class UserForm extends React.Component {
   }
 
   render(){
-    const { search } = this.state;
+    const { search, isError } = this.state;
 
     return (
       <>
@@ -69,6 +70,7 @@ class UserForm extends React.Component {
           </label>
           <Button type='submit'>Search</Button>
         </form>
+        {isError && <Error />}
       </>
     );
   }

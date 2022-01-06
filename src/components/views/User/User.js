@@ -4,6 +4,8 @@ import styles from './User.module.scss';
 
 import Button from '../../common/Button/Button';
 import UserForm from '../../features/UserForm/UserFormContainer';
+import Loader from '../../features/Loader/Loader';
+import Error from '../../features/Error/Error';
 
 class User extends React.Component {
 
@@ -58,6 +60,9 @@ class User extends React.Component {
           <UserForm />
         </div>
         <div className={`col-lg-12 col-md-10 col-sm-12`}>
+          {request.error && request.error !== 'Not Found' && <Error />}
+          {request.error === 'Not Found' && <Error variant='notFound' />}
+          {request.pending === true && <Loader />}
           {(request.success && user) &&
           <>
             <>
