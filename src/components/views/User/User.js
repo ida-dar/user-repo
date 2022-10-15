@@ -9,9 +9,18 @@ import Error from '../../features/Error/Error';
 
 class User extends React.Component {
 
-  state = {
-    activePage: 1,
-    n: 30,
+  constructor(props) {
+    super(props);
+    this.state = {
+      activePage: 1,
+      n: 30,
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState.activePage !== 1) {
+      this.setState({ activePage: 1})
+    }
   }
 
   handlePageChange(newPage) {
