@@ -8,8 +8,8 @@
   padding: ($base-size * 4) ($base-size * 2) ($base-size) ($base-size * 2);
   margin: ($base-size * 6) auto ($base-size * 2) auto;
   height: 200px;
-  min-width: 250px;
-  max-width: 325px;
+  min-width: 300px;
+  max-width: 450px;
   background-color: $color-light;
   border: 1px solid $color-dark;
   border-radius: ($radius * 0.5);
@@ -17,7 +17,9 @@
   .input {
     border: 1px solid lighten($color-dark, 70%);
     padding: ($base-size);
-    width: 200px;
+    min-width: 250px;
+    width: 300px;
+    max-width: 350px;
     border: 1px solid $color-secondary;
     border-radius: ($radius * 0.5);
     outline-style: none;

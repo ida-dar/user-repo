@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ParticlesBg from 'particles-bg';
+import { Helmet } from 'react-helmet';
 
 let config = {
   num: [4, 7],
@@ -18,16 +19,23 @@ let config = {
   random: 15,
 };
 
-const MainLayout = ({children}) => (
-  <>
-    <ParticlesBg type="custom" config={config} bg={true} />
-    <main>
-      <div className='container'>
-        {children}
-      </div>
-    </main>
-  </>
-);
+const MainLayout = ({children}) => {
+  const lang = 'pl';
+
+  return(
+    <>
+      <Helmet title="GitHub user finder" htmlAttributes={{ lang }}>
+        <meta name="description" content="Find any public Github repository" />
+      </Helmet>
+      <ParticlesBg type="custom" config={config} bg={true} />
+      <main>
+        <div className='container'>
+          {children}
+        </div>
+      </main>
+    </>
+  );
+};
 
 MainLayout.propTypes = {
   children: PropTypes.node,
