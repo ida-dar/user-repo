@@ -64,6 +64,7 @@ class User extends React.Component {
         <div className={`col-lg-8 col-md-12 col-sm-12 ${styles.text}`}>
           <p>Welcome to simple app listing any GitHub user public repositories. Please find below a form in which you may enter a GitHub username.</p>
           <p>Repositories are sorted by their number of stars or alphabetically if the star number is equal.</p>
+          <p>As an example try searching my repos, i.e. type <b>ida-dar</b> and hit enter (or click search button)</p>
         </div>
         <div className='col-lg-12 col-md-12 col-sm-12'>
           <UserForm />
