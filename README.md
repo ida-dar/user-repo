@@ -4,6 +4,11 @@ It is a simple web app listing any GitHub user public repositories. To search fo
 <br><br>
 The application works in the current version of Chrome / Firefox.
 
+#### Deployed verision
+You may find deployed version of the app [here](https://user-repo.herokuapp.com/)
+</br>
+However, if you find any problems with accessing the app or any typo please do not hesitate to contact me.
+
 ## Used technologies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
