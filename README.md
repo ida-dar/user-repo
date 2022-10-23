@@ -2,10 +2,10 @@
 
 It is a simple web app listing any GitHub user public repositories. To search for user's repos enter their GitHub username in a form visible after starting the development mode (<a href='#getting-started'>see instructions below</a>). Repositories are sorted by their number of stars or alphabetically if the star number is equal. By clicking on repo's name you will be redirected to its source code on GitHub.
 <br><br>
-The application works in the current version of Chrome / Firefox.
+The application works in the most common browsers such as Chrome / Firefox / Safari.
 
 #### Deployed version
-You may find deployed version of the app [here](https://user-repo.herokuapp.com/)
+You may find deployed version of the app [here](https://user-repo.herokuapp.com/).
 </br>
 However, if you find any problems with accessing the app or any typo please do not hesitate to contact me.
 
