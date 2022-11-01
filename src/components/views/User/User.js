@@ -17,12 +17,6 @@ class User extends React.Component {
     }
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if(prevState.activePage !== 1) {
-      this.setState({ activePage: 1})
-    }
-  }
-
   handlePageChange(newPage) {
     this.setState({
       activePage: newPage,
