@@ -14,7 +14,9 @@ However, if you find any problems with accessing the app or any typo please do n
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 - React - version: 17.0
+- React Helmet - version: ^6.1.0
 - React Redux - version: 4.1
+- Redux Thunk - version: ^2.4.1
 - Bootstrap - version: 5.1
 - Enzyme - version: 3.11
 
