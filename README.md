@@ -5,7 +5,7 @@ It is a simple web app listing any GitHub user public repositories. To search fo
 The application works in the most common browsers such as Chrome / Firefox / Safari.
 
 ## Deployed version
-You may find deployed version of the app [here](https://user-repo.herokuapp.com/).
+You may find deployed version of the app [here](https://user-repo-app.netlify.app/).
 </br>
 However, if you find any problems with accessing the app or any typo please do not hesitate to contact me.
 
